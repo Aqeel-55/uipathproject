@@ -1,0 +1,1009 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="960,1646.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="70">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Activities.System.Arrays</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>UiPath.Word.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="114">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence - RPA Process" sap:VirtualizedContainerService.HintSize="967.2,1581.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" sap2010:Annotation.AnnotationText="Project Name" AutoCloseAfter="00:00:00" DisplayName="Message Box - Project Name" sap:VirtualizedContainerService.HintSize="904.8,116.8" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;InAuto Project RPA (Medical Report)&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:MessageBox>
+    <Flowchart sap:VirtualizedContainerService.HintSize="904.8,1312.8" sap2010:WorkflowViewState.IdRef="Flowchart_3">
+      <Flowchart.Variables>
+        <Variable x:TypeArguments="x:String" Name="Search" />
+        <Variable x:TypeArguments="x:String" Name="contentLength" />
+        <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable" />
+        <Variable x:TypeArguments="x:String" Name="header" />
+        <Variable x:TypeArguments="x:String" Name="paragraph" />
+        <Variable x:TypeArguments="x:String" Name="chatgptResponse" />
+        <Variable x:TypeArguments="x:String" Name="distributeReport" />
+        <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="searchResultItems" />
+        <Variable x:TypeArguments="x:String" Name="fileLocation" />
+        <Variable x:TypeArguments="x:String" Name="person" />
+        <Variable x:TypeArguments="x:String" Name="confirmSend" />
+        <Variable x:TypeArguments="ui:UiElement" Name="searchResultPerson" />
+      </Flowchart.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <av:Point x:Key="ShapeLocation">430,2.3999999999999986</av:Point>
+          <av:Size x:Key="ShapeSize">60,75.2</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">460,77.6 460,108.00000000000001</av:PointCollection>
+          <x:Double x:Key="Width">871.5234288214428</x:Double>
+          <x:Double x:Key="Height">1275.8958639008251</x:Double>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Flowchart.StartNode>
+        <x:Reference>__ReferenceID11</x:Reference>
+      </Flowchart.StartNode>
+      <FlowDecision x:Name="__ReferenceID0" Condition="[String.IsNullOrEmpty(Search)]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79.2,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <av:Point x:Key="ShapeLocation">420.8,236.39999999999998</av:Point>
+            <av:Size x:Key="ShapeSize">79.2,87.2</av:Size>
+            <av:PointCollection x:Key="FalseConnector">499.20000000000005,280 529.2,280 529.2,400 590,400</av:PointCollection>
+            <av:PointCollection x:Key="TrueConnector">420.8,280 310,280</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <FlowDecision.True>
+          <FlowStep x:Name="__ReferenceID3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <av:Point x:Key="ShapeLocation">110,231.60000000000002</av:Point>
+                <av:Size x:Key="ShapeSize">200,96.8</av:Size>
+                <av:PointCollection x:Key="ConnectorLocation">210,231.60000000000002 210,150 360,150</av:PointCollection>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" sap2010:Annotation.AnnotationText="Warning message for null values." AutoCloseAfter="00:00:00" DisplayName="Message Box - Null values warning" sap:VirtualizedContainerService.HintSize="200,96.8" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;Error! You have empty input.&quot; + Environment.NewLine + &quot;Please try again.&quot;]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:MessageBox>
+            <FlowStep.Next>
+              <FlowStep x:Name="__ReferenceID11">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">360,108.00000000000001</av:Point>
+                    <av:Size x:Key="ShapeSize">200,84</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">460,192 460,222 460.40000000000003,222 460.40000000000003,236.39999999999998</av:PointCollection>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <TryCatch sap2010:Annotation.AnnotationText="Input search." DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="200,84" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <TryCatch.Try>
+                    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" sap2010:Annotation.AnnotationText="Input search." DisplayName="Input Dialog - Search Query" sap:VirtualizedContainerService.HintSize="333.6,272.8" sap2010:WorkflowViewState.IdRef="InputDialog_13" IsPassword="False" Label="Please enter the name of the condition you would like information on." Title="Search">
+                      <ui:InputDialog.Result>
+                        <OutArgument x:TypeArguments="x:String">[Search]</OutArgument>
+                      </ui:InputDialog.Result>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:InputDialog>
+                  </TryCatch.Try>
+                  <TryCatch.Catches>
+                    <Catch x:TypeArguments="s:ArgumentException" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ActivityAction x:TypeArguments="s:ArgumentException">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="s:ArgumentException" Name="exception" />
+                        </ActivityAction.Argument>
+                      </ActivityAction>
+                    </Catch>
+                  </TryCatch.Catches>
+                </TryCatch>
+                <FlowStep.Next>
+                  <x:Reference>__ReferenceID0</x:Reference>
+                </FlowStep.Next>
+              </FlowStep>
+            </FlowStep.Next>
+          </FlowStep>
+        </FlowDecision.True>
+        <FlowDecision.False>
+          <FlowStep x:Name="__ReferenceID2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <av:Point x:Key="ShapeLocation">590,328.40000000000003</av:Point>
+                <av:Size x:Key="ShapeSize">200,143.2</av:Size>
+                <av:PointCollection x:Key="ConnectorLocation">690,471.6 690,516.4</av:PointCollection>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence sap2010:Annotation.AnnotationText="Opens the clevelandclinic.org website. Extract data and store in excel." DisplayName="Sequence - Open Browser" sap:VirtualizedContainerService.HintSize="200,143.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Diseases &amp; Conditions | Cleveland Clinic" sap:VirtualizedContainerService.HintSize="784,3012.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="bdaed7bf-356b-483e-9f6e-d51e568860f1" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence sap:VirtualizedContainerService.HintSize="750.4,2796" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Sequence DisplayName="Do - Search user input" sap:VirtualizedContainerService.HintSize="688,1200.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="ui:UiElement" Name="parentContainer" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="2" DisplayName="Type Into 'search-input'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="477.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="bdaed7bf-356b-483e-9f6e-d51e568860f1" Text="[Search]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://my.clevelandclinic.org/health/diseases?dFR[type][0]=Diseases" DesignTimeRectangle="344, 831, 1181, 58" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT search-input'" FullSelectorArgument="&lt;webctrl id='search-input' tag='INPUT' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl id='search-input' tag='INPUT' type='search' class='health-search__input js-search-field js-health-search__input' aaname='' /&gt;" Guid="3e30b54f-092e-4634-8b69-62280afb929d" InformativeScreenshot="6c3915a099d8c5bd286723fe8069e4b7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Diseases &amp;amp; Conditions | Cleveland Clinic' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                          </uix:NTypeInto.Target>
+                        </uix:NTypeInto>
+                        <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'A '" FoundElement="[parentContainer]" sap:VirtualizedContainerService.HintSize="477.6,107.2" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
+                          <ui:WaitUiElementAppear.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0a4cc6f5-479d-4b7d-8aff-0a6f30f1df39" InformativeScreenshot="0aad6b5f96fdba190a253330e3ebbec0" Selector="&lt;webctrl id='site-hits' tag='DIV' /&gt;">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:WaitUiElementAppear.Target>
+                        </ui:WaitUiElementAppear>
+                        <ui:FindChildren Children="[searchResultItems]" DisplayName="Find Children 'ARTICLE'" Filter="&lt;webctrl /&gt;" sap:VirtualizedContainerService.HintSize="477.6,107.2" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_CHILDREN">
+                          <ui:FindChildren.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8b9efcc1-509e-4406-a29d-e93c44a39b0f" InformativeScreenshot="f615de1042c7753c71dc5d2261b8362f" Selector="&lt;webctrl parentid='site-hits' tag='A' /&gt;">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:FindChildren.Target>
+                        </ui:FindChildren>
+                        <If Condition="[searchResultItems.Count &gt; 0]" sap:VirtualizedContainerService.HintSize="477.6,532.8" sap2010:WorkflowViewState.IdRef="If_1">
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="400,249.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="ui:UiElement" Name="url" />
+                                <Variable x:TypeArguments="ui:UiElement" Name="urlText" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click" sap:VirtualizedContainerService.HintSize="337.6,137.6" sap2010:WorkflowViewState.IdRef="NClick_2" InUiElement="[searchResultItems(0)]" KeyModifiers="None" MouseButton="Left" OutUiElement="[url]" Version="V3" />
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence sap:VirtualizedContainerService.HintSize="400,104.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                      </Sequence>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="688,1440" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="stringDataTable" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='New column 0' ReferenceName='Column0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='New column 1' ReferenceName='Column1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="625.6,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_5" LimitExtractionTo="None" MaximumResults="0" Version="V3">
+                          <uix:NExtractData.Target>
+                            <uix:TargetAnchorable DesignTimeRectangle="141, 429, 1058, 15350" DesignTimeScaleFactor="1.25" FriendlyName="'ContentsArrow DownOverv…'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div' tag='DIV' /&gt;" Guid="e85ea0f4-f6c1-4c02-9147-6f3114286987" InformativeScreenshot="10685ba5542092c08718d470665f84b5.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='COVID-19 Pneumonia: Symptoms, Treatment &amp;amp; Recovery' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                          </uix:NExtractData.Target>
+                        </uix:NExtractData>
+                        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="625.6,1127.2" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+                          <ueab:ExcelProcessScopeX.Body>
+                            <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1040.8" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File - Create the Excel Sheet" sap:VirtualizedContainerService.HintSize="529.6,928.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="ExtractData.xlsx">
+                                  <ueab:ExcelApplicationCard.Body>
+                                    <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                      </ActivityAction.Argument>
+                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,659.2" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ueab:ClearRangeX sap2010:Annotation.AnnotationText="Clears the sheet before hand to be able to test multiple times without the previous jobs overlapping each other." DisplayName="Clear Sheet/Range/Table - Clear Excel Sheet" HasHeaders="False" sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="ClearRangeX_1" TargetRange="[Excel.Sheet(&quot;Sheet1&quot;)]">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </ueab:ClearRangeX>
+                                        <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Sheet1&quot;)]" DisplayName="Write DataTable to Excel - Write Values to Excel" ExcludeHeaders="True" sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[ExtractDataTable]" />
+                                        <ueab:AutoFitX sap2010:Annotation.AnnotationText="Fits the excel sheet cell range with the cell value's size." Columns="True" DisplayName="Autofit Range - Organize Cells" sap:VirtualizedContainerService.HintSize="433.6,147.2" sap2010:WorkflowViewState.IdRef="AutoFitX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" Rows="True">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </ueab:AutoFitX>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </ueab:ExcelApplicationCard.Body>
+                                </ueab:ExcelApplicationCard>
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelProcessScopeX.Body>
+                        </ueab:ExcelProcessScopeX>
+                      </Sequence>
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAD5SURBVFhH7ZXREYIwEEQphVIoxVIoJV/WkW9rsAj+/YjumUPBNRwJjDOSnXmD3iV7G2aizfkyhLb3oVkJ9qnwma1JgZmyL2e4omI9CzKbNazgBDmnn0CLRmqAYwTo3GvQHBXrAexlnhNoMQKDUi2GoMUITlEqeDDvEVqM1ADHCJBasHcA6cV18mXOVkp5PwPchuCv/gPUi7Xg3TiP19FRZGGh4MG8gcxmDWXvAC2erKHsHUCgxUgN8PMAJ9dHm3x1Dw/mPUKLb8AAp2DIXf5yz8HicECLRnQQ65mhRSM1wH8EkN/jTPQWsJ4FmY1/pLUhsB77VPkePtwBHUy1h0dtjrEAAAAASUVORK5CYII=" InformativeScreenshot="3bbe8ea72eec9fc5144708daeff7f376.jpg" Selector="&lt;html app='msedge.exe' title='Diseases &amp;amp; Conditions | Cleveland Clinic' /&gt;" Title="Diseases &amp; Conditions | Cleveland Clinic" Url="https://my.clevelandclinic.org/health/diseases?dFR[type][0]=Diseases" />
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+            </Sequence>
+            <FlowStep.Next>
+              <FlowStep x:Name="__ReferenceID4">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">590,516.4</av:Point>
+                    <av:Size x:Key="ShapeSize">200,127.2</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">690,643.6 690,696.4</av:PointCollection>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Sequence sap2010:Annotation.AnnotationText="Pass extracted data to chatgpt to generate report." DisplayName="Sequence - Report Generation" sap:VirtualizedContainerService.HintSize="200,127.2" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="test" />
+                    <Variable x:TypeArguments="sd:DataTable" Name="DataTable" />
+                    <Variable x:TypeArguments="x:Boolean" Name="isClicked" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="713.6,60" sap2010:WorkflowViewState.IdRef="Assign_11">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Boolean">[isClicked]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:ReadRange AddHeaders="False" DataTable="[DataTable]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="713.6,88" sap2010:WorkflowViewState.IdRef="ReadRange_3" SheetName="Sheet1" WorkbookPath="ExtractData.xlsx">
+                    <ui:ReadRange.Range>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </ui:ReadRange.Range>
+                  </ui:ReadRange>
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="713.6,1794.4" sap2010:WorkflowViewState.IdRef="ForEachRow_6">
+                    <ui:ForEachRow.Body>
+                      <ActivityAction x:TypeArguments="sd:DataRow">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="636,1579.2" sap2010:WorkflowViewState.IdRef="Sequence_63">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="573.6,148" sap2010:WorkflowViewState.IdRef="MultipleAssign_6">
+                            <ui:MultipleAssign.AssignOperations>
+                              <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_15">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="x:String">[header]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="x:String">[row(0).ToString]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_16">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="x:String">[paragraph]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="x:String">[row(1).ToString]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                              </scg:List>
+                            </ui:MultipleAssign.AssignOperations>
+                          </ui:MultipleAssign>
+                          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: ChatGPT" sap:VirtualizedContainerService.HintSize="573.6,1279.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="5b77d02f-15cc-4498-9bfe-878424fcb74f" Version="V2">
+                            <uix:NApplicationCard.Body>
+                              <ActivityAction x:TypeArguments="x:Object">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="540,1062.4" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="477.6,60" sap2010:WorkflowViewState.IdRef="SetToClipboard_2" Text="[header + Environment.NewLine + paragraph]" />
+                                  <If Condition="[isClicked = False]" sap:VirtualizedContainerService.HintSize="477.6,652.8" sap2010:WorkflowViewState.IdRef="If_2">
+                                    <If.Then>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="400,369.6" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Message ChatGPT...'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5b77d02f-15cc-4498-9bfe-878424fcb74f" Version="V3">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://chat.openai.com/" DesignTimeRectangle="592, 920, 1054, 72" DesignTimeScaleFactor="1.375" ElementType="InputBox" FriendlyName="'TEXTAREA prompt-textarea'" FullSelectorArgument="&lt;webctrl id='prompt-textarea' tag='TEXTAREA' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl id='prompt-textarea' tag='TEXTAREA' type='' class='m-0 w-full resize-none border-0 bg-transparent py-[10px] pr-10 focus:ring-0 focus-visible:ring-0 dark:bg-transparent md:py-3.5 md:pr-12 placeholder-black/50 dark:placeholder-white/50 pl-3 md:pl-4' aaname='' /&gt;" Guid="1f0fb8d4-2670-4c6e-bae1-9cb417059c78" ImageBase64="" InformativeScreenshot="e2e776020f9d0121864763d1cf282d56.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ChatGPT' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                        <Assign sap:VirtualizedContainerService.HintSize="337.6,60" sap2010:WorkflowViewState.IdRef="Assign_12">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:Boolean">[isClicked]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                      </Sequence>
+                                    </If.Then>
+                                    <If.Else>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="400,104.8" sap2010:WorkflowViewState.IdRef="Sequence_68">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </Sequence>
+                                    </If.Else>
+                                  </If>
+                                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="477.6,154.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)]" Version="V3" />
+                                </Sequence>
+                              </ActivityAction>
+                            </uix:NApplicationCard.Body>
+                            <uix:NApplicationCard.TargetApp>
+                              <uix:TargetApp Area="-10, 0, 1940, 1050" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAAdQAAAHUB48IHZQAABK5JREFUWEe9V1lTU0kU5s0/4/hL5o/4MA9ThTDO4lJqzdSU5UKNjpoAggOSsMuiiJqwyi7IEoEAYRFkRxK2bGfOd6Avfe9tUEvxVH2V9Hq+22frzvjx7M82ZBZ7zmT5cm+f83mHGTEGfSVi50q8Q4xb2f78H5z6rD8/1eec4sn3GClt8bdGionchS4bgX3lnqBhwcnA7w0oEkKAO/Hl5sknhEyf944QgM2547OO/VpNCbWND9P6Vowg8WSCwovzVPQ6QFmG+Z9AMrPEe5q/3pNjGHQhr7mBdhNxSqXTNLX8gTomQtQ3HabNnW0hM/x+mi5XF9GftT66UFFo3MOJLJ/nJo4f3m6coHDreSUlkklaiX6k241VtrHzZfk0sbQgJHSZW1uhh62NtrkucHRksC2ixkENOGZ8/V91fls/iE0eKI/yScA8tf2d1DI2RBvbW9LfMzVG2f482zoNmzgB04Agr+U5Dc1FKM0bYVPVf7mqiDon3lGazbHHxOrfdstJ6GvRfh0OCYlXoX7bmA4jgfOl+fRmekIWw+aQwrYXMobfnfiekOqZGqcrT4qtdTcaKmStagOjC7OUSCXpSvXhPB1GAt2To6K0PTxC/q5m+X8vUCdjg3wisG9OY7U1//rTMlY0J/NWY5tUcEAWuPuqVvoretusPh0uArArpDcyLm1sBtEJqM0uVD4S0yAcg+/e0uOOIIdoVOaPL76XE/mlNE/a8A+lQ4eLACbiyC5V/SdtE4GqvnYhsbW3K2OtY8OiCOO/su0bBnuFFMzXwb4CaR499CEdLgKza8s0u7pstU0EsPnix3XyND2j+4F6WthYs9pq3bWax+xHYfEVSFl3izWmw0Vgfn2VIiuLVttEAN6tvhjI9ueKKSAjnJD+ri+1rY9zDoHfmMLRRaB/ZlJiHkeJNjIgpJjTLdq6D+iAs0Y4Q+o+oSKisrdd9ijpDLrWuQgUcPaCIKGgDdawKeId0YHEcxSB0Pys/M/n/AEpbHspbRDZZn9ButbXAC4CADZKplLi1apPt2kXE9HjHeaAWRSBf148EQLq1AAQh5+otoKRABQrGZmfsdn0zssacVLUBeT6XDbR0uaGmO04AtMrS+Jfqq1gJBAIDcgGKiRxGrDpHwdVLoudTs2J7e6wh7dSKXv5UQQQ0tgDdUHpUDASgDIIyioKEOoBBAWnvKdVYhqO1jQ6aJVe3QecBFA3IP9yVlQ6FIwEfJ1NsgDOpPoeBJ/SB453SMhhFihEmDkJwFlVQeo2fD1gJHCRU+xeIiF1Hset+hERuuKrXIj6IvuOuc0FShUs+AUE1RKCOXre0GEkACDdQlDxfit/aBtDjng22CMkkW7xlSp1A8qEA5xTcHL6WieOvZAgx0NgeyipG+iS3+ju/jUMFxUUHH0NrmSICFPMm4ATOPZKhlDDHTCVTolSJTOrS667H65rCE+kXiexo5CBF4tpwAkkHlwqfi8vkMsoBNUQeQJejjQMi+/E4+wDh0XpU8jAc4n/fPFrCBEC5TAHYhzJqJnDEo5pmn8U9h8m/FwyDX4PHD7N+LlkmnDSEAKKBJ5L3Jl0TjpJWAQU8FzCiwWPhs95M3wdvPQ/jkK+9Hd0g/8AAAAASUVORK5CYII=" InformativeScreenshot="0340fae9269276351ea5994b75a70234.jpg" Selector="&lt;html app='msedge.exe' title='ChatGPT' /&gt;" Title="Bard" Url="https://chat.openai.com/" />
+                            </uix:NApplicationCard.TargetApp>
+                          </uix:NApplicationCard>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEachRow.Body>
+                  </ui:ForEachRow>
+                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Edge: ChatGPT" sap:VirtualizedContainerService.HintSize="713.6,1216" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="dc1f766e-ffba-465c-9c9a-6829986e30b1" Version="V2">
+                    <uix:NApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,999.2" sap2010:WorkflowViewState.IdRef="Sequence_66">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:String" Name="chatgptPrompt" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="337.6,64" sap2010:WorkflowViewState.IdRef="Assign_10">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[chatgptPrompt]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String" xml:space="preserve">["Please generate a concise medical report for medical students summarizing the key aspects of the specified condition. 
+Include information with what was provided above, with the headers.
+Maintain a formal tone throughout the report to ensure clarity and precision.
+Limit the report to 1000 characters/words to emphasize brevity and focus on key details. 
+Avoid including the word count."]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="337.6,60" sap2010:WorkflowViewState.IdRef="SetToClipboard_3" Text="[Environment.NewLine + chatgptPrompt]" />
+                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="337.6,154.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)]" Version="V3" />
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SVG'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dc1f766e-ffba-465c-9c9a-6829986e30b1" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://chat.openai.com/" DesignTimeRectangle="1593, 938, 33, 33" DesignTimeScaleFactor="1.375" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span&amp;gt;svg' parentid='__next' tag='svg' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl type='' parentid='__next' tag='svg' class='text-white dark:text-black' aaname='' /&gt;" Guid="95c2cda7-cc2c-45e0-a16c-f937d5eb6c96" ImageBase64="" InformativeScreenshot="feee35ac848ceb5a0245898acf2e439d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ChatGPT' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <Delay Duration="00:00:15" sap:VirtualizedContainerService.HintSize="337.6,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Medical Report:'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dc1f766e-ffba-465c-9c9a-6829986e30b1" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://chat.openai.com/c/f0ac9371-a8c7-45e3-9674-20421207527c" DesignTimeRectangle="669, 754, 25, 25" DesignTimeScaleFactor="1.375" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl class='icon-md' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;button&amp;gt;svg' parentid='__next' tag='svg' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl class='icon-md' type='' parentid='__next' tag='svg' aaname='' /&gt;" Guid="5b2a2edd-cc70-4192-9946-2966f6ff4bb2" InformativeScreenshot="953f42b8eea6c375d2d5e6be37a4e199.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Ebola: Overview and Prevention' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="669, -1023, 843, 1766" FriendlyName="'Medical Report:'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='4' parentid='__next' tag='DIV' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl type='' class='markdown prose w-full break-words dark:prose-invert dark' parentid='__next' tag='DIV' aaname='' check:innerText='Medical Report: Ebola Virus Disease (EVD)&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;Overview:&amp;#xD;&amp;#xA;Ebola is a viral hemorrhagic fever caused by' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </ActivityAction>
+                    </uix:NApplicationCard.Body>
+                    <uix:NApplicationCard.TargetApp>
+                      <uix:TargetApp Area="-10, 0, 1940, 1050" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAAdQAAAHUB48IHZQAABK5JREFUWEe9V1lTU0kU5s0/4/hL5o/4MA9ThTDO4lJqzdSU5UKNjpoAggOSsMuiiJqwyi7IEoEAYRFkRxK2bGfOd6Avfe9tUEvxVH2V9Hq+22frzvjx7M82ZBZ7zmT5cm+f83mHGTEGfSVi50q8Q4xb2f78H5z6rD8/1eec4sn3GClt8bdGionchS4bgX3lnqBhwcnA7w0oEkKAO/Hl5sknhEyf944QgM2547OO/VpNCbWND9P6Vowg8WSCwovzVPQ6QFmG+Z9AMrPEe5q/3pNjGHQhr7mBdhNxSqXTNLX8gTomQtQ3HabNnW0hM/x+mi5XF9GftT66UFFo3MOJLJ/nJo4f3m6coHDreSUlkklaiX6k241VtrHzZfk0sbQgJHSZW1uhh62NtrkucHRksC2ixkENOGZ8/V91fls/iE0eKI/yScA8tf2d1DI2RBvbW9LfMzVG2f482zoNmzgB04Agr+U5Dc1FKM0bYVPVf7mqiDon3lGazbHHxOrfdstJ6GvRfh0OCYlXoX7bmA4jgfOl+fRmekIWw+aQwrYXMobfnfiekOqZGqcrT4qtdTcaKmStagOjC7OUSCXpSvXhPB1GAt2To6K0PTxC/q5m+X8vUCdjg3wisG9OY7U1//rTMlY0J/NWY5tUcEAWuPuqVvoretusPh0uArArpDcyLm1sBtEJqM0uVD4S0yAcg+/e0uOOIIdoVOaPL76XE/mlNE/a8A+lQ4eLACbiyC5V/SdtE4GqvnYhsbW3K2OtY8OiCOO/su0bBnuFFMzXwb4CaR499CEdLgKza8s0u7pstU0EsPnix3XyND2j+4F6WthYs9pq3bWax+xHYfEVSFl3izWmw0Vgfn2VIiuLVttEAN6tvhjI9ueKKSAjnJD+ri+1rY9zDoHfmMLRRaB/ZlJiHkeJNjIgpJjTLdq6D+iAs0Y4Q+o+oSKisrdd9ijpDLrWuQgUcPaCIKGgDdawKeId0YHEcxSB0Pys/M/n/AEpbHspbRDZZn9ButbXAC4CADZKplLi1apPt2kXE9HjHeaAWRSBf148EQLq1AAQh5+otoKRABQrGZmfsdn0zssacVLUBeT6XDbR0uaGmO04AtMrS+Jfqq1gJBAIDcgGKiRxGrDpHwdVLoudTs2J7e6wh7dSKXv5UQQQ0tgDdUHpUDASgDIIyioKEOoBBAWnvKdVYhqO1jQ6aJVe3QecBFA3IP9yVlQ6FIwEfJ1NsgDOpPoeBJ/SB453SMhhFihEmDkJwFlVQeo2fD1gJHCRU+xeIiF1Hset+hERuuKrXIj6IvuOuc0FShUs+AUE1RKCOXre0GEkACDdQlDxfit/aBtDjng22CMkkW7xlSp1A8qEA5xTcHL6WieOvZAgx0NgeyipG+iS3+ju/jUMFxUUHH0NrmSICFPMm4ATOPZKhlDDHTCVTolSJTOrS667H65rCE+kXiexo5CBF4tpwAkkHlwqfi8vkMsoBNUQeQJejjQMi+/E4+wDh0XpU8jAc4n/fPFrCBEC5TAHYhzJqJnDEo5pmn8U9h8m/FwyDX4PHD7N+LlkmnDSEAKKBJ5L3Jl0TjpJWAQU8FzCiwWPhs95M3wdvPQ/jkK+9Hd0g/8AAAAASUVORK5CYII=" InformativeScreenshot="fa88b6b02406d1277f9bb048d972bc36.jpg" Selector="&lt;html app='msedge.exe' url='https://chat.openai.com/' /&gt;" Title="DataTable to ChatGPT Integration - Opera" Url="https://chat.openai.com/" />
+                    </uix:NApplicationCard.TargetApp>
+                  </uix:NApplicationCard>
+                </Sequence>
+                <FlowStep.Next>
+                  <FlowStep x:Name="__ReferenceID5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <av:Point x:Key="ShapeLocation">590,696.4</av:Point>
+                        <av:Size x:Key="ShapeSize">200,127.2</av:Size>
+                        <av:PointCollection x:Key="ConnectorLocation">690,823.6 690,851.6</av:PointCollection>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence sap2010:Annotation.AnnotationText="Pasting generated report onto Word and formatting it." DisplayName="Sequence - Formating Report" sap:VirtualizedContainerService.HintSize="200,127.2" sap2010:WorkflowViewState.IdRef="Sequence_69">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="MedicalReport" sap:VirtualizedContainerService.HintSize="529.6,790.4" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
+                        <p:WordApplicationScope.Body>
+                          <ActivityAction x:TypeArguments="ui:WordDocument">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,680.8" sap2010:WorkflowViewState.IdRef="Sequence_72">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="433.6,154.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" InScope="[WordDocumentScope]" ScopeIdentifier="WordDocumentScope" Shortcuts="[d(hk)][d(ctrl)]a[u(ctrl)][u(hk)][d(hk)][d(ctrl)]v[u(ctrl)][u(hk)]" Version="V3" />
+                              <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="433.6,164.8" sap2010:WorkflowViewState.IdRef="WordReplaceText_3" ReplaceAll="True" Search="*">
+                                <p:WordReplaceText.Replace>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <Literal x:TypeArguments="x:String" Value="" />
+                                  </InArgument>
+                                </p:WordReplaceText.Replace>
+                              </p:WordReplaceText>
+                              <p:WordSaveAs DisplayName="Save Document As" FilePath="MedicalReport" sap:VirtualizedContainerService.HintSize="433.6,169.6" sap2010:WorkflowViewState.IdRef="WordSaveAs_1" />
+                            </Sequence>
+                          </ActivityAction>
+                        </p:WordApplicationScope.Body>
+                      </p:WordApplicationScope>
+                    </Sequence>
+                    <FlowStep.Next>
+                      <FlowStep x:Name="__ReferenceID8">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <av:Point x:Key="ShapeLocation">590,851.6</av:Point>
+                            <av:Size x:Key="ShapeSize">200,96.8</av:Size>
+                            <av:PointCollection x:Key="ConnectorLocation">590,900 560,900 560,466.4000000000001 390,466.4000000000001 390,496.40000000000003</av:PointCollection>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:InputDialog Options="{x:Null}" sap2010:Annotation.AnnotationText="User decides to send into MS Teams." DisplayName="Input Dialog - Send to MS Teams" sap:VirtualizedContainerService.HintSize="200,96.8" sap2010:WorkflowViewState.IdRef="InputDialog_7" IsPassword="False" Label="Would you like to send report to MS Teams?" OptionsString="Yes;No" Title="Save to MS Teams">
+                          <ui:InputDialog.Result>
+                            <OutArgument x:TypeArguments="x:String">[distributeReport]</OutArgument>
+                          </ui:InputDialog.Result>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:InputDialog>
+                        <FlowStep.Next>
+                          <FlowDecision x:Name="__ReferenceID6" Condition="[distributeReport.ToString().Equals(&quot;Yes&quot;, StringComparison.InvariantCultureIgnoreCase)]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79.2,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <av:Point x:Key="ShapeLocation">350.8,496.40000000000003</av:Point>
+                                <av:Size x:Key="ShapeSize">79.2,87.2</av:Size>
+                                <x:String x:Key="FalseLabel">No</x:String>
+                                <x:String x:Key="TrueLabel">Yes</x:String>
+                                <av:PointCollection x:Key="TrueConnector">350.8,540 320.80000000000007,540 320.80000000000007,431.6 120,431.6 120,461.6</av:PointCollection>
+                                <av:PointCollection x:Key="FalseConnector">430,540 510,540 510,1090 480,1090</av:PointCollection>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <FlowDecision.True>
+                              <FlowStep x:Name="__ReferenceID9">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <av:Point x:Key="ShapeLocation">20,461.6</av:Point>
+                                    <av:Size x:Key="ShapeSize">200,96.8</av:Size>
+                                    <av:PointCollection x:Key="ConnectorLocation">120,558.4 120,588.4 190,588.4 190,633.6</av:PointCollection>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" sap2010:Annotation.AnnotationText="User is prompted to provide the file path." DisplayName="Input Dialog - Provide file path" sap:VirtualizedContainerService.HintSize="200,96.8" sap2010:WorkflowViewState.IdRef="InputDialog_8" IsPassword="False" Label="File will be under UiPath folder" Title="Enter file location">
+                                  <ui:InputDialog.Result>
+                                    <OutArgument x:TypeArguments="x:String">[fileLocation]</OutArgument>
+                                  </ui:InputDialog.Result>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:InputDialog>
+                                <FlowStep.Next>
+                                  <FlowStep x:Name="__ReferenceID10">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <av:Point x:Key="ShapeLocation">90,633.6</av:Point>
+                                        <av:Size x:Key="ShapeSize">200,96.8</av:Size>
+                                        <av:PointCollection x:Key="ConnectorLocation">190,730.4 190,760.4 230,760.4 230,782.8</av:PointCollection>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <TryCatch sap2010:Annotation.AnnotationText="User is prompted choose who to send the message to." DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="200,96.8" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <TryCatch.Try>
+                                        <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" sap2010:Annotation.AnnotationText="User is prompted choose who to send the message to." DisplayName="Input Dialog - Choose MS Team chat" sap:VirtualizedContainerService.HintSize="333.6,272.8" sap2010:WorkflowViewState.IdRef="InputDialog_12" IsPassword="False" Label="Forward to.." Title="Who would you like to send it to?">
+                                          <ui:InputDialog.Result>
+                                            <OutArgument x:TypeArguments="x:String">[person]</OutArgument>
+                                          </ui:InputDialog.Result>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </ui:InputDialog>
+                                      </TryCatch.Try>
+                                      <TryCatch.Catches>
+                                        <Catch x:TypeArguments="s:ArgumentException" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ActivityAction x:TypeArguments="s:ArgumentException">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="s:ArgumentException" Name="exception" />
+                                            </ActivityAction.Argument>
+                                          </ActivityAction>
+                                        </Catch>
+                                      </TryCatch.Catches>
+                                    </TryCatch>
+                                    <FlowStep.Next>
+                                      <FlowStep x:Name="__ReferenceID7">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <av:Point x:Key="ShapeLocation">130,782.8</av:Point>
+                                            <av:Size x:Key="ShapeSize">200,114.4</av:Size>
+                                            <av:PointCollection x:Key="ConnectorLocation">230,897.1999999999999 230,1090 280,1090</av:PointCollection>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Sequence sap2010:Annotation.AnnotationText="Publish to MS Teams." sap:VirtualizedContainerService.HintSize="200,114.4" sap2010:WorkflowViewState.IdRef="Sequence_73">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Microsoft Teams classic" sap:VirtualizedContainerService.HintSize="573.6,3151.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_10" InteractionMode="DebuggerApi" ScopeGuid="9536369a-fdbe-45de-9f58-8d7831007876" Version="V2">
+                                            <uix:NApplicationCard.Body>
+                                              <ActivityAction x:TypeArguments="x:Object">
+                                                <ActivityAction.Argument>
+                                                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                                </ActivityAction.Argument>
+                                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="540,2934.4" sap2010:WorkflowViewState.IdRef="Sequence_78">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <ui:Click AlterIfDisabled="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="150" DelayMS="150" DisplayName="Click 'BUTTON  app-bar-86fcd49...'" sap:VirtualizedContainerService.HintSize="477.6,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                    <ui:Click.CursorPosition>
+                                                      <ui:CursorPosition Position="Center">
+                                                        <ui:CursorPosition.OffsetX>
+                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                        </ui:CursorPosition.OffsetX>
+                                                        <ui:CursorPosition.OffsetY>
+                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                        </ui:CursorPosition.OffsetY>
+                                                      </ui:CursorPosition>
+                                                    </ui:Click.CursorPosition>
+                                                    <ui:Click.Target>
+                                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0bf27eb6-f94c-4e48-a277-17c202c6e729" InformativeScreenshot="73f3cd1a95d70f8a371fceea725c1a19" Selector="&lt;webctrl aria-label='Chat Toolbar more options' tag='BUTTON' /&gt;">
+                                                        <ui:Target.TimeoutMS>
+                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                        </ui:Target.TimeoutMS>
+                                                        <ui:Target.WaitForReady>
+                                                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                        </ui:Target.WaitForReady>
+                                                      </ui:Target>
+                                                    </ui:Click.Target>
+                                                  </ui:Click>
+                                                  <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="100" DelayMS="100" DisplayName="Type Into 'INPUT  control-input'" EmptyField="True" sap:VirtualizedContainerService.HintSize="477.6,156" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="[person + &quot;[k(Enter)]&quot;]">
+                                                    <ui:TypeInto.Target>
+                                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a5add318-d0f9-483b-a6a1-4f705ec207aa" InformativeScreenshot="81011e9ce924bf3f16e15f511ce8f29c" Selector="&lt;webctrl id='control-input' tag='INPUT' /&gt;">
+                                                        <ui:Target.TimeoutMS>
+                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                        </ui:Target.TimeoutMS>
+                                                        <ui:Target.WaitForReady>
+                                                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                        </ui:Target.WaitForReady>
+                                                      </ui:Target>
+                                                    </ui:TypeInto.Target>
+                                                  </ui:TypeInto>
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DelayBefore="2" DisplayName="Click 'person'" sap:VirtualizedContainerService.HintSize="477.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9536369a-fdbe-45de-9f58-8d7831007876" Version="V3">
+                                                    <uix:NClick.Target>
+                                                      <uix:TargetAnchorable BrowserURL="https://teams.microsoft.com/multi-window/?agent=web&amp;version=23113026202" DesignTimeRectangle="503, 388, 323, 113" DesignTimeScaleFactor="1.25" FriendlyName="'Aung San'" FullSelectorArgument="&lt;webctrl id='experience-container-91041637-9979-4896-8328-a10506b812a2' tag='IFRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div&amp;gt;div' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='experience-container-91041637-9979-4896-8328-a10506b812a2' tag='IFRAME' /&gt;&lt;webctrl type='' parentid='app' tag='DIV' class='fui-Primitive ___19k87or fhfum1 fz04i0k f1eq5olt ftfh06i fbd532e ftgm304 fg8on96 f1c3wz7s f1r8xq1f fv71qf3 fgr6219 f11qmguv f10jk5vf f1tyq0we f1k3ejl7 f3xgliw f1d0x1az f1eet4a9 f10s4a5f fjvmp5m f1xo2n31 f9npm4n f1ob6fdq fxuk1rs fnn0x10 f1k0cief fou318e f3i0tig f1q8m9q f19l39ch' aaname='' check:innerText='Aung San WIN (TP)&amp;#xD;&amp;#xA;P-Staff&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;WIN_Aung_San@TP.EDU.SG' /&gt;" Guid="9ed6d298-5315-412d-a333-199935adcdf7" ImageBase64="" InformativeScreenshot="3df4fbac16104e67f444e56234e5d41d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Microsoft Teams classic' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                            <uix:Target DesignTimeRectangle="689, 165, 625, 40" ElementType="InputBox" FriendlyName="'Aung San Win'" FullSelectorArgument="&lt;webctrl id='searchInputField' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='searchInputField' tag='INPUT' type='' class='ts-header-search ts-heading-font power-bar ng-valid ng-valid-maxlength ng-dirty ng-valid-parse ng-touched ng-not-empty' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NClick.Target>
+                                                  </uix:NClick>
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DelayBefore="2" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="477.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9536369a-fdbe-45de-9f58-8d7831007876" Version="V3">
+                                                    <uix:NClick.Target>
+                                                      <uix:TargetAnchorable BrowserURL="https://teams.microsoft.com/multi-window/?agent=web&amp;version=23113026202" DesignTimeRectangle="694, 970, 40, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl id='experience-container-03ec6de0-090a-4932-bc0f-821df57e6292' tag='IFRAME' /&gt;&lt;webctrl name='FilePicker' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='experience-container-03ec6de0-090a-4932-bc0f-821df57e6292' tag='IFRAME' /&gt;&lt;webctrl name='FilePicker' tag='BUTTON' type='' class='ui-toolbar__item e sm uq ur us ut ei ej ek el mf mg mh mi tu fl fy cs gy cu gz ha hk dt oz np uz tq tr mn mo mp mq pa pb pc pd pe pf pg ph pi pj pk pl pm pn po pp pq pr ps pt ie ic in io ip iq pu pv pw px py pz qa qb qc qd qe qf qg qh qi qj qk ql qm qn qo qp' aaname='Attach files' /&gt;" Guid="1f953ec8-268d-411b-b1a4-8bb624f70033" InformativeScreenshot="32f4d30f5a2998645b817ceef678c5cc.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Aung San WIN (TP) | Microsoft Teams classic' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                                            <uix:Target DesignTimeRectangle="654, 970, 40, 40" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl id='experience-container-03ec6de0-090a-4932-bc0f-821df57e6292' tag='IFRAME' /&gt;&lt;webctrl name='importance-picker' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='experience-container-03ec6de0-090a-4932-bc0f-821df57e6292' tag='IFRAME' /&gt;&lt;webctrl name='importance-picker' tag='BUTTON' type='' class='ui-toolbar__item e sm uq ur us ut ei ej ek el mf mg mh mi tu fl fy cs gy cu gz ha hk dt oz np uz tq tr mn mo mp mq pa pb pc pd pe pf pg ph pi pj pk pl pm pn po pp pq pr ps pt ie ic in io ip iq pu pv pw px py pz qa qb qc qd qe qf qg qh qi qj qk ql qm qn qo qp' aaname='Set delivery options' /&gt;" SearchSteps="FuzzySelector" />
+                                                            <uix:Target DesignTimeRectangle="734, 970, 40, 40" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl id='experience-container-03ec6de0-090a-4932-bc0f-821df57e6292' tag='IFRAME' /&gt;&lt;webctrl name='newMessageCommands-popup-semo' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='experience-container-03ec6de0-090a-4932-bc0f-821df57e6292' tag='IFRAME' /&gt;&lt;webctrl name='newMessageCommands-popup-semo' tag='BUTTON' type='' class='ui-toolbar__item e sm uq ur us ut ei ej ek el mf mg mh mi tu fl fy cs gy cu gz ha hk dt oz np uz tq tr mn mo mp mq pa pb pc pd pe pf pg ph pi pj pk pl pm pn po pp pq pr ps pt ie ic in io ip iq pu pv pw px py pz qa qb qc qd qe qf qg qh qi qj qk ql qm qn qo qp' aaname='Loop components' /&gt;" SearchSteps="FuzzySelector" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NClick.Target>
+                                                  </uix:NClick>
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DelayBefore="1" DisplayName="Click 'Upload from this device'" sap:VirtualizedContainerService.HintSize="477.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9536369a-fdbe-45de-9f58-8d7831007876" Version="V3">
+                                                    <uix:NClick.Target>
+                                                      <uix:TargetAnchorable BrowserURL="https://teams.microsoft.com/multi-window/?agent=web&amp;version=23113026202" DesignTimeRectangle="561, 927, 267, 35" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Upload from this device'" FullSelectorArgument="&lt;webctrl id='experience-container-dbca475f-1774-4a5f-b63a-0b416c569af6' tag='IFRAME' /&gt;&lt;webctrl aaname='Upload from this device' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='experience-container-dbca475f-1774-4a5f-b63a-0b416c569af6' tag='IFRAME' /&gt;&lt;webctrl aaname='Upload from this device' tag='A' type='' class='ui-menu__item ke hd hw hx ec blc wu wv ww id ub bld ble blf' check:innerText='Upload from this device' /&gt;" Guid="df2ad1c4-0f83-4984-985d-2f735f7c385b" InformativeScreenshot="4688c5a7c4fe3777cd225de4090bd551.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Aung San WIN (TP) | Microsoft Teams classic' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="3">
+                                                            <uix:Target DesignTimeRectangle="694, 970, 40, 40" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl id='experience-container-dbca475f-1774-4a5f-b63a-0b416c569af6' tag='IFRAME' /&gt;&lt;webctrl name='FilePicker' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='experience-container-dbca475f-1774-4a5f-b63a-0b416c569af6' tag='IFRAME' /&gt;&lt;webctrl name='FilePicker' tag='BUTTON' type='' class='ui-toolbar__item e sy vc vd ve vf ei ej ek el mr ms mt mu ug fl fy cs hk cu hl bkr hw dt pl bks bkt ob vl uc ud mz na nb nc pm pn po pp pq pr ps pt pu pv pw px py pz qa qb qc qd qe qf iq io iz ja jb jc qg qh qi qj qk ql qm qn qo qp qq qr qs qt qu qv qw qx qy qz ra rb' aaname='Attach files' /&gt;" SearchSteps="FuzzySelector" />
+                                                            <uix:Target DesignTimeRectangle="654, 970, 40, 40" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl id='experience-container-03ec6de0-090a-4932-bc0f-821df57e6292' tag='IFRAME' /&gt;&lt;webctrl name='importance-picker' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='experience-container-03ec6de0-090a-4932-bc0f-821df57e6292' tag='IFRAME' /&gt;&lt;webctrl name='importance-picker' tag='BUTTON' type='' class='ui-toolbar__item e sm uq ur us ut ei ej ek el mf mg mh mi tu fl fy cs gy cu gz ha hk dt oz np uz tq tr mn mo mp mq pa pb pc pd pe pf pg ph pi pj pk pl pm pn po pp pq pr ps pt ie ic in io ip iq pu pv pw px py pz qa qb qc qd qe qf qg qh qi qj qk ql qm qn qo qp' aaname='Set delivery options' /&gt;" SearchSteps="FuzzySelector" />
+                                                            <uix:Target DesignTimeRectangle="734, 970, 40, 40" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl id='experience-container-03ec6de0-090a-4932-bc0f-821df57e6292' tag='IFRAME' /&gt;&lt;webctrl name='newMessageCommands-popup-semo' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='experience-container-03ec6de0-090a-4932-bc0f-821df57e6292' tag='IFRAME' /&gt;&lt;webctrl name='newMessageCommands-popup-semo' tag='BUTTON' type='' class='ui-toolbar__item e sm uq ur us ut ei ej ek el mf mg mh mi tu fl fy cs gy cu gz ha hk dt oz np uz tq tr mn mo mp mq pa pb pc pd pe pf pg ph pi pj pk pl pm pn po pp pq pr ps pt ie ic in io ip iq pu pv pw px py pz qa qb qc qd qe qf qg qh qi qj qk ql qm qn qo qp' aaname='Loop components' /&gt;" SearchSteps="FuzzySelector" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NClick.Target>
+                                                  </uix:NClick>
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Start of'" sap:VirtualizedContainerService.HintSize="477.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9536369a-fdbe-45de-9f58-8d7831007876" Version="V3">
+                                                    <uix:NClick.Target>
+                                                      <uix:TargetAnchorable DesignTimeRectangle="75, 390, 79, 40" DesignTimeScaleFactor="1.25" FriendlyName="'Documents (pinned)'" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Control Host' cls='NamespaceTreeControl' title='Namespace Tree Control' /&gt;&lt;wnd ctrlid='100' title='Navigation Pane' /&gt;&lt;ctrl name='Documents (pinned)' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Control Host' cls='NamespaceTreeControl' title='Namespace Tree Control' /&gt;&lt;wnd ctrlid='100' title='Navigation Pane' /&gt;&lt;ctrl name='Documents (pinned)' role='outline item' automationid='' check:text='Documents (pinned)' /&gt;" Guid="99e1d042-d04f-4a7b-af29-d8c5151bb608" InformativeScreenshot="7123a0abeb6334efaf3d4d26ac2ac40a.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                                            <uix:Target DesignTimeRectangle="75, 310, 59, 40" FriendlyName="'Start of'" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Control Host' cls='NamespaceTreeControl' title='Namespace Tree Control' /&gt;&lt;wnd ctrlid='100' title='Navigation Pane' /&gt;&lt;ctrl name='Start of Quick Access - Desktop (pinned)' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Control Host' cls='NamespaceTreeControl' title='Namespace Tree Control' /&gt;&lt;wnd ctrlid='100' title='Navigation Pane' /&gt;&lt;ctrl name='Start of Quick Access - Desktop (pinned)' role='outline item' automationid='' check:text='Start of Quick Access - Desktop (pinned)' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                                                            <uix:Target DesignTimeRectangle="75, 470, 42, 40" FriendlyName="'Music (pinned)'" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Control Host' cls='NamespaceTreeControl' title='Namespace Tree Control' /&gt;&lt;wnd ctrlid='100' title='Navigation Pane' /&gt;&lt;ctrl name='Music (pinned)' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Control Host' cls='NamespaceTreeControl' title='Namespace Tree Control' /&gt;&lt;wnd ctrlid='100' title='Navigation Pane' /&gt;&lt;ctrl name='Music (pinned)' role='outline item' automationid='' check:text='Music (pinned)' /&gt;" ImageBase64="" SearchSteps="FuzzySelector" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NClick.Target>
+                                                  </uix:NClick>
+                                                  <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="200" DelayMS="200" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="477.6,156" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[fileLocation]">
+                                                    <ui:TypeInto.Target>
+                                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8a30a625-fc01-4219-b11f-c0f0b1d4475c" InformativeScreenshot="37593515ec281858a1ba8d85893397c1" Selector="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;&lt;wnd aaname=' Search Documents' cls='DirectUIHWND' /&gt;&lt;ctrl name=' Search Documents' role='pane' /&gt;&lt;ctrl automationid='SearchEditBox' /&gt;">
+                                                        <ui:Target.TimeoutMS>
+                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                        </ui:Target.TimeoutMS>
+                                                        <ui:Target.WaitForReady>
+                                                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                        </ui:Target.WaitForReady>
+                                                      </ui:Target>
+                                                    </ui:TypeInto.Target>
+                                                  </ui:TypeInto>
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&quot;C:\Users\syeda\OneDriv…'" sap:VirtualizedContainerService.HintSize="477.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9536369a-fdbe-45de-9f58-8d7831007876" Version="V3">
+                                                    <uix:NClick.Target>
+                                                      <uix:TargetAnchorable DesignTimeRectangle="227, 150, 724, 61" DesignTimeScaleFactor="1.25" ElementType="ListItem" FriendlyName="'MedicalReport'" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd ctrlid='1121' title='ShellView' /&gt;&lt;wnd aaname='Items View' cls='DirectUIHWND' /&gt;&lt;ctrl name='Items View' role='list' /&gt;&lt;ctrl automationid='0' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd ctrlid='1121' title='ShellView' /&gt;&lt;wnd aaname='Items View' cls='DirectUIHWND' /&gt;&lt;ctrl name='Items View' role='list' /&gt;&lt;ctrl automationid='0' role='list item' check:text='MedicalReport' /&gt;" Guid="f0522127-fa80-4039-af84-8a18e6f2c4e3" ImageBase64="" InformativeScreenshot="dce8fbaea41533a5067c22bd29396d33.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                            <uix:Target DesignTimeRectangle="690, 47, 245, 46" FriendlyName="'&quot;C:\Users\syeda\OneDriv…'" FullSelectorArgument="&lt;wnd aaname=' Search Documents' cls='DirectUIHWND' /&gt;" FuzzySelectorArgument="&lt;wnd aaname=' Search Documents' cls='DirectUIHWND' /&gt;" ImageBase64="" SearchSteps="Selector, FuzzySelector" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NClick.Target>
+                                                  </uix:NClick>
+                                                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="477.6,107.2" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                    <ui:Click.CursorPosition>
+                                                      <ui:CursorPosition Position="Center">
+                                                        <ui:CursorPosition.OffsetX>
+                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                        </ui:CursorPosition.OffsetX>
+                                                        <ui:CursorPosition.OffsetY>
+                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                        </ui:CursorPosition.OffsetY>
+                                                      </ui:CursorPosition>
+                                                    </ui:Click.CursorPosition>
+                                                    <ui:Click.Target>
+                                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="12941fe5-1b74-4d86-890c-9b46327dde8d" InformativeScreenshot="6e3ef10a00e103846d1eddc3437e9195" Selector="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;">
+                                                        <ui:Target.TimeoutMS>
+                                                          <InArgument x:TypeArguments="x:Int32" />
+                                                        </ui:Target.TimeoutMS>
+                                                        <ui:Target.WaitForReady>
+                                                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                        </ui:Target.WaitForReady>
+                                                      </ui:Target>
+                                                    </ui:Click.Target>
+                                                  </ui:Click>
+                                                  <ui:InputDialog Options="{x:Null}" sap2010:Annotation.AnnotationText="User decides to confirm or not confirm send process." DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="477.6,326.4" sap2010:WorkflowViewState.IdRef="InputDialog_11" IsPassword="False" Label="Would you like to confirm the send?" OptionsString="Yes;No" Title="Confirmation of sending">
+                                                    <ui:InputDialog.Result>
+                                                      <OutArgument x:TypeArguments="x:String">[confirmSend]</OutArgument>
+                                                    </ui:InputDialog.Result>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </ui:InputDialog>
+                                                  <If Condition="[confirmSend.ToString().Equals(&quot;Yes&quot;, StringComparison.InvariantCultureIgnoreCase)]" sap:VirtualizedContainerService.HintSize="477.6,778.4" sap2010:WorkflowViewState.IdRef="If_4">
+                                                    <If.Then>
+                                                      <Sequence sap:VirtualizedContainerService.HintSize="400,330.4" sap2010:WorkflowViewState.IdRef="Sequence_81">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TextBox'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="337.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="9536369a-fdbe-45de-9f58-8d7831007876" Text="[&quot;A summarised report of &quot; + Search + &quot;[k(Enter)]&quot;]" Version="V3">
+                                                          <uix:NTypeInto.Target>
+                                                            <uix:TargetAnchorable BrowserURL="https://teams.microsoft.com/multi-window/?agent=web&amp;version=23113026202" DesignTimeRectangle="630, 853, 1108, 25" DesignTimeScaleFactor="1.25" FriendlyName="'P'" FullSelectorArgument="&lt;webctrl id='experience-container-2f5660c7-acb0-440f-a774-378b074b739d' tag='IFRAME' /&gt;&lt;webctrl class='ck-placeholder' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl id='experience-container-2f5660c7-acb0-440f-a774-378b074b739d' tag='IFRAME' /&gt;&lt;webctrl class='ck-placeholder' tag='P' type='' aaname='' /&gt;" Guid="e211f67d-0322-4249-a1a8-6f24c3011c4c" InformativeScreenshot="dde7ee36d9acdd7efcc2ca025afae466.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Aung San WIN (TP) | Microsoft Teams classic' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                              <uix:TargetAnchorable.Anchors>
+                                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                  <uix:Target DesignTimeRectangle="635, 892, 455, 60" FriendlyName="'MedicalReport 2.docxPeo…'" FullSelectorArgument="&lt;webctrl id='experience-container-2f5660c7-acb0-440f-a774-378b074b739d' tag='IFRAME' /&gt;&lt;webctrl aria-label='100 % uploaded of MedicalReport 2.docx.Press tab for more option*' aria-role='group' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='experience-container-2f5660c7-acb0-440f-a774-378b074b739d' tag='IFRAME' /&gt;&lt;webctrl aria-label='100 % uploaded of MedicalReport 2.docx.Press tab for more option*' aria-role='group' tag='DIV' type='' class='ui-attachment e fz cr bi bll nx cs iy cu wk kv ja blm gs bln ee ef eg eh ei ej ek el mf mg mh mi blo oz mn mo mp mq pa pb pc pd pe pf pg va ph pi pj pk pl pm pn po pp pq pr ps pt ie ic in io ip iq pu vf pv pw px py pz qa qb qc qd qe qf qg qh qi qj qk ql qm qn qo qp blp blq blr bls blt blu blv blw blx bly blz bma bmb hk bmc bmd bme bmf' aaname='' /&gt;" ImageBase64="" SearchSteps="FuzzySelector" />
+                                                                </scg:List>
+                                                              </uix:TargetAnchorable.Anchors>
+                                                            </uix:TargetAnchorable>
+                                                          </uix:NTypeInto.Target>
+                                                        </uix:NTypeInto>
+                                                      </Sequence>
+                                                    </If.Then>
+                                                    <If.Else>
+                                                      <Sequence sap:VirtualizedContainerService.HintSize="400,269.6" sap2010:WorkflowViewState.IdRef="Sequence_82">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9536369a-fdbe-45de-9f58-8d7831007876" Version="V3">
+                                                          <uix:NClick.Target>
+                                                            <uix:TargetAnchorable BrowserURL="https://teams.microsoft.com/multi-window/?agent=web&amp;version=23113026202" DesignTimeRectangle="1044, 902, 40, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl id='experience-container-28341847-8de1-410b-adea-d795dfe2e2ea' tag='IFRAME' /&gt;&lt;webctrl aaname='Remove attachment' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='experience-container-28341847-8de1-410b-adea-d795dfe2e2ea' tag='IFRAME' /&gt;&lt;webctrl aaname='Remove attachment' tag='BUTTON' type='' class='ui-attachment__action fl uj fz ga cr e fj hk gs sm mf mg mh mi cs gy cu gz vz wa bmr oz bms bmt mn mo mp mq pa pb pc pd pe pf pg va ph pi pj pk pl pm pn po pp pq pr ps pt ie ic in io ip iq pu vf pv pw px py pz qa qb qc qd qe qf qg qh qi qj qk ql qm qn qo qp fy tq tr' /&gt;" Guid="f0692e92-7152-4b49-b1f8-6b1b5cd0959d" InformativeScreenshot="6c0c39902d6c08cedbd42b922a4cb918.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Aung San WIN (TP) | Microsoft Teams classic' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                              <uix:TargetAnchorable.Anchors>
+                                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                                                  <uix:Target DesignTimeRectangle="1104, 982, 20, 20" FriendlyName="'IMAGE'" FullSelectorArgument="&lt;webctrl id='experience-container-28341847-8de1-410b-adea-d795dfe2e2ea' tag='IFRAME' /&gt;&lt;webctrl idx='2' parentname='Updates' tag='image' /&gt;" FuzzySelectorArgument="&lt;webctrl id='experience-container-28341847-8de1-410b-adea-d795dfe2e2ea' tag='IFRAME' /&gt;&lt;webctrl type='' parentname='Updates' tag='image' class='' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+                                                                  <uix:Target DesignTimeRectangle="984, 982, 20, 20" FriendlyName="'IMAGE'" FullSelectorArgument="&lt;webctrl id='experience-container-28341847-8de1-410b-adea-d795dfe2e2ea' tag='IFRAME' /&gt;&lt;webctrl idx='2' parentname='Praise' tag='image' /&gt;" FuzzySelectorArgument="&lt;webctrl id='experience-container-28341847-8de1-410b-adea-d795dfe2e2ea' tag='IFRAME' /&gt;&lt;webctrl type='' parentname='Praise' tag='image' class='' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+                                                                </scg:List>
+                                                              </uix:TargetAnchorable.Anchors>
+                                                            </uix:TargetAnchorable>
+                                                          </uix:NClick.Target>
+                                                        </uix:NClick>
+                                                      </Sequence>
+                                                    </If.Else>
+                                                  </If>
+                                                </Sequence>
+                                              </ActivityAction>
+                                            </uix:NApplicationCard.Body>
+                                            <uix:NApplicationCard.TargetApp>
+                                              <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEtSURBVDhPY8AGGjreydW0vNld0/z6M4gG8aFSxAGQpurm1/9hGMSHShEHQDajGADkg8QDo062Bkae/AyiwQpxgcDQWWfdvNv/B4XPRXEBSHNA5Mn/IBqsEAR8gvc88g7e8x8d+wTv+Onu3fEdOQywugCbZhgGSnNBVOEBIIVLV979jwxAfJC4m1cbPBxKap79ATkfjqNOXoUbAMMggMxHNgCEUQwA4kFoAMzvMIzfgFM/wAbgikbPgM34DYg6tQNsADLwDpz0wcIm97+FTc5/K7uC/57+fXDNVc1vngI17Q6MPPUBpDk07oI0VBsCpOUcXJuUsec/DKflHIYbUNPyehZUGW7Q2vpFvAZoE0wTQvObRy0tbzBtxAZACoEalgAz0GsgfglkL8KdnRkYAFHYrcdRQDYQAAAAAElFTkSuQmCC" InformativeScreenshot="cb26c0d107e8a773d4de6f1811f019b4.jpg" Selector="&lt;html app='msedge.exe' title='Microsoft Teams classic' /&gt;" Title="Microsoft Teams classic" Url="https://teams.microsoft.com/_?culture=en-sg&amp;country=sg#/school/teams-grid/General?ctx=teamsGrid" />
+                                            </uix:NApplicationCard.TargetApp>
+                                          </uix:NApplicationCard>
+                                        </Sequence>
+                                        <FlowStep.Next>
+                                          <FlowStep x:Name="__ReferenceID1">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <av:Point x:Key="ShapeLocation">280,1048</av:Point>
+                                                <av:Size x:Key="ShapeSize">200,84</av:Size>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" sap2010:Annotation.AnnotationText="Closing statement." AutoCloseAfter="00:00:00" DisplayName="Message Box - Closing Statements" sap:VirtualizedContainerService.HintSize="200,84" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;Thank you for using our RPA Process.&quot;]">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </ui:MessageBox>
+                                          </FlowStep>
+                                        </FlowStep.Next>
+                                      </FlowStep>
+                                    </FlowStep.Next>
+                                  </FlowStep>
+                                </FlowStep.Next>
+                              </FlowStep>
+                            </FlowDecision.True>
+                            <FlowDecision.False>
+                              <x:Reference>__ReferenceID1</x:Reference>
+                            </FlowDecision.False>
+                          </FlowDecision>
+                        </FlowStep.Next>
+                      </FlowStep>
+                    </FlowStep.Next>
+                  </FlowStep>
+                </FlowStep.Next>
+              </FlowStep>
+            </FlowStep.Next>
+          </FlowStep>
+        </FlowDecision.False>
+      </FlowDecision>
+      <x:Reference>__ReferenceID2</x:Reference>
+      <x:Reference>__ReferenceID3</x:Reference>
+      <x:Reference>__ReferenceID4</x:Reference>
+      <x:Reference>__ReferenceID5</x:Reference>
+      <x:Reference>__ReferenceID6</x:Reference>
+      <x:Reference>__ReferenceID7</x:Reference>
+      <x:Reference>__ReferenceID8</x:Reference>
+      <x:Reference>__ReferenceID1</x:Reference>
+      <x:Reference>__ReferenceID9</x:Reference>
+      <x:Reference>__ReferenceID10</x:Reference>
+      <x:Reference>__ReferenceID11</x:Reference>
+    </Flowchart>
+  </Sequence>
+</Activity>
